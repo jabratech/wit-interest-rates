@@ -1,0 +1,14 @@
+interface types {
+    use jabratech:common/types.{currency, user};
+
+    record interest-rate{
+        rate: f64,
+        id: s16, 
+        currency: currency,
+    }
+    record interest-rates-response{
+        code: s16,
+        message: string,
+        data: list<interest-rate>
+    }
+}

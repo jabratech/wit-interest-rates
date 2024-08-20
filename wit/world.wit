@@ -1,0 +1,5 @@
+package jabratech:interest-rates-entity;
+
+world interest-rates-entity {
+    export interest-rates-handler;
+}

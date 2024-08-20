@@ -1,0 +1,7 @@
+interface interest-rates-handler {
+    use jabratech:common/types.{response-error};
+    use types.{interest-rates-response};
+
+    get:  func(currency: option<list<string>>, latest: option<bool>, is-equal: option<bool>) -> result<interest-rates-response, response-error>;
+    
+  }
