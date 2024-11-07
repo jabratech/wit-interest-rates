@@ -1,0 +1,6 @@
+interface handler {
+    use types.{calculate-interest-rate-request, calculate-interest-rate-response};
+    use jabratech:common/types.{response};
+
+    calculate-interest-rate: func(request: calculate-interest-rate-request) -> result<calculate-interest-rate-response, response>;
+}

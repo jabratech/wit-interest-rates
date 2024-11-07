@@ -1,14 +1,13 @@
 interface types {
-    use jabratech:common/types.{currency, user};
-
-    record interest-rate{
-        rate: f64,
-        id: s16, 
-        currency: currency,
+    record calculate-interest-rate-request {
+        expiry-date: string,
+        ttm: f64,
+        currency: string
     }
-    record interest-rates-response{
+
+    record calculate-interest-rate-response {
         code: s16,
         message: string,
-        data: list<interest-rate>
+        data: f64
     }
 }
